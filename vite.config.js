@@ -7,6 +7,7 @@ import { ViteEjsPlugin } from 'vite-plugin-ejs';
 import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
 
 export default defineConfig({
+     base: '/personal',
      plugins: [
           createHtmlPlugin({
                minify: true,
