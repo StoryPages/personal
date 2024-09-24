@@ -84,8 +84,28 @@
      color: $error;
 }
 
+.border-red {
+     border: 0.2rem solid $error;
+
+     &:hover {
+          border: 0.2rem solid $error;
+     }
+
+     &:focus {
+          border: 0.2rem solid $error;
+     }
+
+     &:focus-visible {
+          border: 0.2rem solid $error;
+     }
+
+     &:active {
+          border: 0.2rem solid $error;
+     }
+}
+
 .shake-animation {
-     animation: shake 0.2s ease;
+     animation: shake 0.2s ease infinite;
 }
 
 @keyframes shake {
