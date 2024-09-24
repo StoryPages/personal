@@ -1,0 +1,34 @@
+@media (min-width: 320px) {
+     .hero__container {
+          padding-top: 37rem;
+          background-image: url('/images/hero/hero-320.svg');
+          background-repeat: no-repeat;
+          background-position: center top;
+     }
+
+     .hero__desc {
+          margin-bottom: 3rem;
+          width: 100%;
+     }
+}
+
+@media (min-width: 769px) {
+     .hero__container {
+          padding-top: 12rem;
+          background-position: right bottom;
+     }
+
+     .hero__desc {
+          margin-bottom: 10rem;
+          width: 50%;
+     }
+}
+
+@media (min-width: 1350px) {
+     .hero__container {
+          padding-top: 12rem;
+          background-image: url('/images/hero/hero.svg');
+          background-repeat: no-repeat;
+          background-position: top right;
+     }
+}

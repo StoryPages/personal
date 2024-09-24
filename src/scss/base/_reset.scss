@@ -1,0 +1,70 @@
+// Reset 2024
+
+// The Body and The HTML elements
+body,
+html {
+     height: 100%;
+     scroll-behavior: smooth;
+}
+
+// Box sizing
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+}
+// Margin and padding
+* {
+     margin: 0;
+     padding: 0;
+}
+// List decoration
+ul[role='list'],
+ol[role='list'] {
+     list-style: none;
+}
+
+ul,
+li,
+ol {
+     list-style: none;
+}
+// Link underline
+a:not([class]) {
+     text-decoration-skip-ink: auto;
+}
+
+a {
+     text-decoration: none;
+     color: transparent;
+     outline: none;
+}
+
+// Image and video settings
+
+// Responsiveness
+img,
+picture,
+svg,
+video,
+canvas {
+     max-width: 100%;
+     height: auto;
+     // Inline images
+     vertical-align: middle;
+     // Font on images ? (stay with me)
+     font-style: italic;
+     // Backroung images
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+// Inputs
+input,
+button,
+textarea,
+select {
+     user-select: none;
+     font: inherit;
+     outline: none;
+     cursor: pointer;
+}

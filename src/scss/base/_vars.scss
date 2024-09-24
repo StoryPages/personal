@@ -1,0 +1,28 @@
+// Fonts
+$font-main: 'Sora';
+$font-size-heading: clamp(2.8rem, 1.891rem + 2.42vw, 4.8rem);
+$font-weight-regular: 400;
+$margin-bottom-heading: clamp(4rem, 1.872rem + 6.81vw, 8rem);
+$span-text-shadow:
+     -0.2rem -0.2rem 0 #000,
+     0.2rem -0.2rem 0 #000,
+     -0.2rem 0.2rem 0 #000,
+     0.2rem 0.2rem 0 #000;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$neutral: #404040;
+$zinc-100: #f4f4f5;
+$zinc-300: #d4d4d8;
+$zinc-500: #71717a;
+$zinc-800: #27272a;
+$error: #ef4444;
+
+// Box-shadow
+$shadow:
+     0 8px 16px -6px rgba(24, 39, 75, 0.08),
+     0 6px 8px -6px rgba(24, 39, 75, 0.12);
+
+//Border
+$border-card: 1rem;

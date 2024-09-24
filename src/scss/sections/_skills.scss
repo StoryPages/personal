@@ -1,0 +1,126 @@
+.skills__heading {
+     @include headingStyle;
+     color: $black;
+}
+
+.skills__list {
+     flex-wrap: wrap;
+     gap: var(--gap);
+     row-gap: 5.5rem;
+     --gap: 7rem;
+     --offsets: 4;
+}
+
+.skills__link {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     row-gap: 3.2rem;
+     width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+     padding: clamp(2.4rem, 2.081rem + 1.02vw, 3rem);
+     border: 0.2rem solid $black;
+     border-radius: $border-card;
+     transition: 0.2s ease-in-out;
+
+     &:hover {
+          background-color: $black;
+          .skills__svg {
+               fill: $white;
+          }
+          .skills__span {
+               color: $white;
+          }
+
+          .path-1 {
+               fill: $white;
+          }
+
+          .path-2 {
+               fill: $black;
+          }
+     }
+
+     &:focus {
+          background-color: $black;
+          .skills__svg {
+               fill: $white;
+          }
+          .skills__span {
+               color: $white;
+          }
+
+          .path-1 {
+               fill: $white;
+          }
+
+          .path-2 {
+               fill: $black;
+          }
+     }
+
+     &:focus-visible {
+          background-color: $black;
+          .skills__svg {
+               fill: $white;
+          }
+          .skills__span {
+               color: $white;
+          }
+
+          .path-1 {
+               fill: $white;
+          }
+
+          .path-2 {
+               fill: $black;
+          }
+     }
+}
+
+.skills__svg {
+     width: 5.6rem;
+     height: 5.6rem;
+     transition: 0.2s ease-in-out;
+
+     .path-1 {
+          fill: $black;
+          transition: 0.2s ease-in-out;
+     }
+
+     .path-2 {
+          fill: $white;
+          transition: 0.2s ease-in-out;
+     }
+}
+
+.skills__span {
+     font-weight: 700;
+     font-size: 2rem;
+     text-transform: capitalize;
+     text-align: center;
+     color: $black;
+     transition: 0.2s ease-in-out;
+}
+
+// Отключаем hover на сенсорных экранах
+@media (hover: none) {
+     .skills__link {
+          &:hover {
+               background-color: initial;
+               .skills__svg {
+                    fill: initial;
+               }
+               .skills__span {
+                    color: initial;
+               }
+
+               .path-1 {
+                    fill: $black;
+               }
+
+               .path-2 {
+                    fill: $white;
+               }
+          }
+     }
+}

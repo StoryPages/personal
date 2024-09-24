@@ -1,0 +1,87 @@
+.projects {
+     padding-top: 7.5rem;
+     padding-bottom: 14rem;
+     background-color: $black;
+}
+
+.projects__heading {
+     @include headingStyle;
+     color: $white;
+}
+
+.projects__list {
+     flex-direction: column;
+     gap: clamp(2.8rem, -2.094rem + 15.66vw, 12rem);
+     max-width: 100%;
+}
+
+.projects__item {
+     width: 100%;
+     align-items: center;
+     justify-content: space-between;
+     gap: 5rem;
+}
+
+.projects__picture {
+     width: 50%;
+
+     .projects__img {
+          width: 100%;
+          object-fit: cover;
+     }
+}
+
+.projects__item-wrap {
+     flex-direction: column;
+     gap: 3rem;
+     width: 50%;
+}
+
+.projects__number {
+     font-weight: 800;
+     font-size: $font-size-heading;
+     color: $white;
+}
+
+.projects__title {
+     font-weight: 700;
+     font-size: clamp(2rem, 1.657rem + 1.71vw, 3.2rem);
+     color: $white;
+}
+
+.projects__desc {
+     font-weight: $font-weight-regular;
+     font-size: 1.6rem;
+     line-height: 150%;
+     color: $zinc-500;
+}
+
+.projects__link {
+     width: 2rem;
+     height: 2rem;
+     color: $white;
+     outline: none;
+     transition: 0.2s ease-in-out;
+
+     &:hover {
+          color: $neutral;
+     }
+
+     &:focus-visible {
+          color: $neutral;
+     }
+}
+
+.projects__svg {
+     width: 2rem;
+     height: 2rem;
+}
+
+// Отключаем hover на сенсорных экранах
+@media (hover: none) {
+     .projects__link {
+          &:hover {
+               color: $white;
+          }
+     }
+}

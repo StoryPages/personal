@@ -1,0 +1,35 @@
+// Normalize
+@import './base/normalize';
+
+// Mixins
+@import './mixins/mixins.scss';
+
+// Base
+@import './base/fonts';
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+// Sections
+@import './sections/header';
+@import './sections/hero';
+@import './sections/skills';
+@import './sections/experience';
+@import './sections/about';
+@import './sections/my-projects';
+@import './sections/testimonial';
+@import './sections/footer';
+@import './sections/form';
+@import './sections/mobile-burger';
+@import './sections/mobile-nav';
+@import './sections/alert';
+
+// Media
+@import './media/header-media';
+@import './media/hero-media';
+@import './media/skills-media';
+@import './media/experience-media';
+@import './media/about-media';
+@import './media/my-projects-media';
+@import './media/testimonial-media';
+@import './media/footer-media';

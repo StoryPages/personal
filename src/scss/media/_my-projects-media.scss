@@ -1,0 +1,27 @@
+@media (min-width: 320px) {
+     .projects__item {
+          flex-wrap: wrap;
+     }
+
+     .projects__picture {
+          width: 100%;
+     }
+
+     .projects__item-wrap {
+          width: 100%;
+     }
+
+     .order {
+          order: 0;
+     }
+}
+
+@media (min-width: 600px) {
+     .projects__item {
+          flex-wrap: nowrap;
+     }
+
+     .order {
+          order: 1;
+     }
+}

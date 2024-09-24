@@ -1,0 +1,39 @@
+// Переменные для бургера
+$top: 0.8rem;
+$bottom: 0.8rem;
+$width-line: 2.8rem;
+$height-line: 0.3rem;
+
+.header__burger {
+     place-items: center;
+     height: 3.6rem;
+     width: 3.6rem;
+     background-color: transparent;
+     border: 0;
+}
+.header__berger-line {
+     position: relative;
+     width: $width-line;
+     height: $height-line;
+     background-color: $black;
+
+     &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: $top;
+          width: $width-line;
+          height: $height-line;
+          background-color: $black;
+     }
+
+     &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: $bottom;
+          width: $width-line;
+          height: $height-line;
+          background-color: $black;
+     }
+}

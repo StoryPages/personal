@@ -1,0 +1,43 @@
+@media (min-width: 320px) {
+     .footer__container {
+          flex-wrap: wrap;
+     }
+
+     .form {
+          width: 100%;
+     }
+
+     .footer__wrap {
+          flex-wrap: wrap;
+     }
+
+     .footer__block-text {
+          width: 100%;
+     }
+}
+
+@media (min-width: 769px) {
+     .footer__container {
+          flex-wrap: nowrap;
+     }
+
+     .footer__block-text {
+          padding-top: 0;
+     }
+}
+
+@media (min-width: 1200px) {
+     .form {
+          width: 50%;
+     }
+
+     .footer__block-text {
+          width: 50%;
+     }
+}
+
+@media (min-width: 1300px) {
+     .footer__wrap {
+          flex-wrap: nowrap;
+     }
+}

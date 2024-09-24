@@ -1,0 +1,50 @@
+html {
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+}
+
+.body {
+     position: relative;
+     height: 100%;
+     margin: 0;
+     font-family: $font-main, sans-serif, serif, Arial, Helvetica;
+     text-wrap: balance;
+}
+
+.container {
+     margin: 0 auto;
+     max-width: 1440px;
+     padding: 0 clamp(1.6rem, -2.673rem + 11.39vw, 11rem);
+}
+
+.flex {
+     display: flex;
+}
+
+.grid {
+     display: grid;
+}
+
+.no-scroll {
+     overflow-y: hidden;
+}
+
+.none {
+     display: none !important;
+}
+
+.stop-scroll {
+     overflow-y: hidden;
+}
+
+* {
+     // outline: 1px solid green !important;
+}
+
+section {
+     padding: clamp(4rem, 2.936rem + 3.4vw, 6rem) 0;
+}
+
+.order {
+     order: 1;
+}

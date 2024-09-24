@@ -1,0 +1,18 @@
+@mixin heroHeadingStyle {
+     font-weight: 400;
+     font-size: clamp(2.8rem, 1.891rem + 2.42vw, 4.8rem);
+}
+
+@mixin headingStyle {
+     text-align: center;
+     margin-bottom: $margin-bottom-heading;
+     font-weight: $font-weight-regular;
+     font-size: $font-size-heading;
+}
+
+@mixin shadowMobileNav {
+     box-shadow: $shadow;
+     -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+     -ms-box-shadow: $shadow;
+}

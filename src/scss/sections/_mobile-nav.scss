@@ -1,0 +1,71 @@
+.mobile {
+     position: fixed;
+     flex-direction: column;
+     align-items: center;
+     gap: 5rem;
+     top: 0;
+     width: 100%;
+     padding: 2rem;
+     z-index: 9999999;
+     background-color: $white;
+     border-radius: 0 0 2rem 2rem;
+     @include shadowMobileNav;
+     transform: translateY(-100%);
+     transition: transform 0.3s linear;
+}
+
+.open {
+     transform: translateY(0);
+}
+
+.mobile__close {
+     position: relative;
+     margin-left: auto;
+     margin-right: 2rem;
+
+     &::before,
+     &::after {
+          content: '';
+          position: absolute;
+          width: 2rem;
+          height: 0.3rem;
+          background-color: $black;
+     }
+
+     &::before {
+          transform: rotate(45deg);
+     }
+
+     &::after {
+          transform: rotate(-45deg);
+     }
+}
+
+.mobile__list {
+     flex-direction: column;
+     align-items: center;
+     row-gap: 1.5rem;
+}
+
+.mobile__link {
+     font-weight: 600;
+     font-size: 2rem;
+     text-transform: capitalize;
+     color: $black;
+}
+
+.mobile__btn {
+     gap: 0.8rem;
+     padding: 1rem 1.5rem;
+     font-weight: 600;
+     font-size: 2rem;
+     color: $white;
+     background-color: $black;
+     border: 0.2rem solid $black;
+     border-radius: $border-card;
+}
+
+.mobile__btn-svg {
+     width: 2rem;
+     height: 2rem;
+}

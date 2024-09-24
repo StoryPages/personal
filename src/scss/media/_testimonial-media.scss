@@ -1,0 +1,12 @@
+@media (min-width: 320px) {
+     .testimonial__list {
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+}
+
+@media (min-width: 769px) {
+     .testimonial__list {
+          flex-wrap: nowrap;
+     }
+}

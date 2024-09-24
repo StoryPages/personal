@@ -1,0 +1,24 @@
+@media (min-width: 320px) {
+     .experience__link-inner {
+          flex-wrap: wrap;
+          gap: 3rem;
+     }
+
+     .experience__wrapper-text {
+          width: 100%;
+     }
+
+     .experience__span {
+          margin: 0;
+     }
+}
+
+@media (min-width: 1025px) {
+     .experience__wrapper-text {
+          width: 70%;
+     }
+
+     .experience__span {
+          margin-left: auto;
+     }
+}

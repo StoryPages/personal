@@ -1,0 +1,72 @@
+.hero__container {
+     padding-top: 12rem;
+}
+.hero__heading {
+     margin-bottom: 2.3rem;
+     @include heroHeadingStyle;
+     line-height: 158%;
+     color: $black;
+}
+
+.hero__span {
+     color: $white;
+     text-shadow: $span-text-shadow;
+}
+
+.hero__desc {
+     margin-bottom: 10rem;
+     width: 50%;
+     font-weight: $font-weight-regular;
+     font-size: 1.6rem;
+     line-height: 150%;
+     color: $zinc-500;
+}
+
+.hero__social {
+     width: clamp(26.4rem, 23.855rem + 6.79vw, 32rem);
+}
+
+.social__list {
+     gap: clamp(2.4rem, 2.036rem + 0.97vw, 3.2rem);
+}
+
+.social__link {
+     padding: clamp(1.4rem, 1.218rem + 0.48vw, 1.8rem);
+     border: 0.2rem solid $black;
+     border-radius: $border-card;
+     transition: 0.2s ease-in-out;
+
+     &:hover {
+          background-color: $black;
+
+          .social__svg {
+               fill: $white;
+          }
+     }
+
+     &:focus-visible {
+          background-color: $black;
+
+          .social__svg {
+               fill: $white;
+          }
+     }
+}
+
+.social__svg {
+     width: 2rem;
+     height: 2rem;
+     transition: 0.2s ease-in-out;
+}
+
+// Отключаем hover на сенсорных экранах
+@media (hover: none) {
+     .social__link {
+          &:hover {
+               background-color: initial;
+               .social__svg {
+                    fill: initial;
+               }
+          }
+     }
+}

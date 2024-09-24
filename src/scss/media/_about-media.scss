@@ -1,0 +1,34 @@
+@media (min-width: 320px) {
+     .about__container {
+          flex-wrap: wrap;
+     }
+
+     .about__img {
+          width: 100%;
+     }
+
+     .about__wrap-text {
+          width: 100%;
+     }
+}
+
+@media (min-width: 769px) {
+     .about__img {
+          display: none;
+     }
+}
+
+@media (min-width: 1200px) {
+     .about__container {
+          flex-wrap: nowrap;
+     }
+
+     .about__img {
+          display: block;
+          width: 50%;
+     }
+
+     .about__wrap-text {
+          width: 50%;
+     }
+}

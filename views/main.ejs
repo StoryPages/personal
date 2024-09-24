@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Personal</title>
+          <meta property="og:title" content="Personal" />
+          <meta
+               property="og:description"
+               content="I’m Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book."
+          />
+          <meta property="og:image" content="/images/about/about.svg" />
+          <!-- Links -->
+          <link rel="icon" href="/images/favicon/favicon.svg" />
+          <!-- JS -->
+          <script src="./src/js/main.js" type="module" defer></script>
+     </head>
+     <body class="body">
+          <%- include('./sections/header.ejs') %>
+          <main class="main">
+               <%- include('./sections/hero.ejs') %> <%- include('./sections/skills.ejs')%> <%-
+               include('./sections/experience.ejs') %> <%- include('./sections/about.ejs') %> <%-
+               include('./sections/my-projects.ejs') %> <%- include('./sections/testimonial.ejs') %>
+               <%- include('./sections/footer.ejs') %>
+          </main>
+          <%- include('./sections/mobile-nav.ejs') %> <%- include('./sections/alert.ejs') %>
+     </body>
+</html>
