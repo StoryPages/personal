@@ -39,7 +39,17 @@ function sendMessage() {
           chat_id: CHAT_ID,
           parse_mode: 'HTML',
           text: message,
-     });
+     })
+          .then(() => {
+               console.log('Сообщение отправлено:');
+               arrayIdFormInputs.forEach((input) => {
+                    input.value = '';
+               });
+               alertShow();
+          })
+          .catch((error) => {
+               console.error('Ошибка при отправке сообщения:', error);
+          });
 }
 
 // Validation form
@@ -51,9 +61,6 @@ FORM.addEventListener('submit', function (event) {
      const isTextValid = validationInputText();
 
      if (isNameValid && isUrlValid && isTextValid) {
-          arrayIdFormInputs.forEach((inputs) => {
-               inputs.value = '';
-          });
           alertShow();
           sendMessage();
      }
