@@ -52,16 +52,29 @@ function sendMessage() {
           });
 }
 
+// Function validation of key
+function validateInput(key) {
+     switch (key) {
+          case 'name':
+               return validationInputName();
+          case 'url':
+               return validationInputUrl();
+          case 'text':
+               return validationInputText();
+          default:
+               return false;
+     }
+}
+
 // Validation form
 FORM.addEventListener('submit', function (event) {
      event.preventDefault();
 
-     const isNameValid = validationInputName();
-     const isUrlValid = validationInputUrl();
-     const isTextValid = validationInputText();
+     const isNameValid = validateInput('name');
+     const isUrlValid = validateInput('url');
+     const isTextValid = validateInput('text');
 
      if (isNameValid && isUrlValid && isTextValid) {
-          alertShow();
           sendMessage();
      }
 });
