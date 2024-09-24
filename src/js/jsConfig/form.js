@@ -19,6 +19,11 @@ messageElements.forEach((errorMessage) => {
      errorMessage.classList.add('none');
 });
 
+const alertShow = () => {
+     $alert.classList.add('show');
+     $alertContainer.classList.add('show');
+};
+
 // Post data
 const TOKEN = '8004900723:AAF357Hf41r_UWSMNuswTiG37we1ejov8Hc';
 const CHAT_ID = '-1002350522727';
@@ -49,6 +54,7 @@ FORM.addEventListener('submit', function (event) {
           arrayIdFormInputs.forEach((inputs) => {
                inputs.value = '';
           });
+          alertShow();
           sendMessage();
      }
 });
@@ -118,3 +124,10 @@ function validationInputText() {
 NAME.addEventListener('input', validationInputName);
 URL.addEventListener('input', validationInputUrl);
 TEXT.addEventListener('input', validationInputText);
+
+function removeClassShow() {
+     $alert.classList.remove('show');
+     $alertContainer.classList.remove('show');
+}
+
+$alertBtn.onclick = () => removeClassShow();
