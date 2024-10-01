@@ -25,8 +25,8 @@ const alertShow = () => {
 };
 
 // Post data
-const TOKEN = '8004900723:AAF357Hf41r_UWSMNuswTiG37we1ejov8Hc';
-const CHAT_ID = '-1002350522727';
+const TOKEN = '?';
+const CHAT_ID = '?';
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 function sendMessage() {
